@@ -1,1 +1,176 @@
 
+:root{
+ --bg:#f8f6f2;
+ --text:#2a211c;
+ --bronze:#8c6844;
+ --gold:#d6b06c;
+ --card:#ffffff;
+}
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+html{
+ scroll-behavior:smooth;
+}
+
+body{
+ font-family:'Inter',sans-serif;
+ background:var(--bg);
+ color:var(--text);
+ line-height:1.7;
+}
+
+h1,h2,h3{
+ font-family:'Cormorant Garamond',serif;
+}
+
+.navbar{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:24px 8%;
+ border-bottom:1px solid #ddd;
+ background:rgba(248,246,242,.95);
+ position:sticky;
+ top:0;
+}
+
+.brand{
+ display:flex;
+ align-items:center;
+ gap:16px;
+}
+
+.brand img{
+ width:72px;
+ height:72px;
+ border-radius:50%;
+}
+
+.brand h1{
+ font-size:2rem;
+}
+
+nav{
+ display:flex;
+ gap:28px;
+}
+
+nav a{
+ text-decoration:none;
+ color:var(--text);
+ font-weight:600;
+}
+
+nav a:hover{
+ color:var(--bronze);
+}
+
+.hero{
+ display:grid;
+ grid-template-columns:1.4fr 1fr;
+ gap:50px;
+ padding:80px 8%;
+ align-items:center;
+}
+
+.label{
+ color:var(--bronze);
+ letter-spacing:2px;
+ font-size:.8rem;
+ margin-bottom:15px;
+}
+
+.hero h1{
+ font-size:4.5rem;
+}
+
+.hero h2{
+ font-size:2rem;
+ margin-bottom:8px;
+}
+
+.hero h3{
+ margin:25px 0;
+ color:var(--bronze);
+}
+
+.welcome{
+ max-width:700px;
+}
+
+.latest{
+ background:var(--card);
+ padding:30px;
+ border:1px solid #ddd;
+ box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.cover{
+ height:340px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ background:#ece7df;
+ margin:20px 0;
+ font-family:'Cormorant Garamond',serif;
+ font-size:2rem;
+}
+
+.button{
+ display:inline-block;
+ margin-top:20px;
+ background:var(--bronze);
+ color:#fff;
+ padding:14px 28px;
+ text-decoration:none;
+ border-radius:4px;
+}
+
+.button:hover{
+ background:var(--gold);
+ color:var(--text);
+}
+
+.about{
+ padding:80px 8%;
+}
+
+.about h2{
+ font-size:3rem;
+ margin-bottom:20px;
+}
+
+footer{
+ margin-top:60px;
+ padding:50px 8%;
+ text-align:center;
+ border-top:1px solid #ddd;
+}
+
+footer h2{
+ font-size:2.5rem;
+ margin-bottom:10px;
+}
+
+@media(max-width:900px){
+ .hero{
+  grid-template-columns:1fr;
+ }
+ .navbar{
+  flex-direction:column;
+  gap:20px;
+ }
+ nav{
+  flex-wrap:wrap;
+  justify-content:center;
+ }
+ .hero h1{
+  font-size:3.2rem;
+ }
+}
+
